@@ -86,9 +86,7 @@ for i in test:
                               "latlon": [json_value['latLang']['lat'], json_value['latLang']['lng']],
                               "phones": list(filter(None, phones)),
                               "working_hours": working_hours_translated})
-            break      
-
-print(json_temp)      
+            break            
 
 with open('json_res', 'w') as json_file:
     json.dump(json_temp, json_file)
